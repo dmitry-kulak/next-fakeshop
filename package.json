@@ -13,15 +13,19 @@
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
-    "@prisma/client": "^4.5.0",
+    "@hookform/resolvers": "^2.9.10",
+    "@prisma/client": "^4.6.1",
     "@tanstack/react-query": "^4.10.0",
+    "@tanstack/react-query-devtools": "^4.15.0",
     "@trpc/client": "10.0.0-rc.4",
     "@trpc/next": "10.0.0-rc.4",
     "@trpc/react-query": "10.0.0-rc.4",
     "@trpc/server": "10.0.0-rc.4",
     "next": "13.0.2",
+    "rambda": "^7.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.39.3",
     "superjson": "1.9.1",
     "zod": "^3.18.0"
   },
@@ -37,7 +41,7 @@
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
-    "prisma": "^4.5.0",
+    "prisma": "^4.6.1",
     "tailwindcss": "^3.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
