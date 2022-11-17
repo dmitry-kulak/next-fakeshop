@@ -1,0 +1,43 @@
+/* Color styles */
+--white: #FFFFFF;
+--text-color: #323232;
+--component--base--outline: #000000;
+--main--fill--with--gradient: #606F7C;
+--main--fill-with--pattern: #606F7C;
+--black--alpha--10: #000000;
+--accent--main: #93D1FF;
+--accent--notification: #B52A2A;
+--gray--900: #EDEDED;
+--gray--800: #DDDDDD;
+--gray--700: #CCCCCC;
+--gray--600: #9C9C9C;
+--gray--500: #858585;
+--gray--400: #606060;
+--gray--300: #424242;
+--gray--200: #303030;
+--gray--100: #262626;
+--base--900: #13161C;
+--base--800: #1A2029;
+--base--700: #1F2732;
+--base--600: #283547;
+--base--500: #2F435F;
+--base--400: #3A567C;
+--base--300: #45648F;
+--base--200: #5576A4;
+--base--100: #6C8BB7;
+--main--900: #2E3B46;
+--main--800: #394957;
+--main--700: #465562;
+--main--600: #515F6B;
+--main--500: #606F7C;
+--main--400: #72818F;
+--main--300: #83929F;
+--main--200: #9BAAB9;
+--main--100: #B1BECA;
+
+/* Text-size styles */
+/* base size: text-bold--md (16px) */
+--text-semi--xs: 0.62rem;
+--text-bold--xs: 0.62rem;
+--text-bold--sm: 0.75rem;
+--text-bold--md: 1rem;
