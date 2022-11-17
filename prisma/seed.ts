@@ -1,19 +1,27 @@
 import { PrismaClient } from "@prisma/client";
-import { products } from "./products";
+import { productsSeed } from "./seeds/productsSeed";
+import { usersSeed } from "./seeds/usersSeed";
 
 const prisma = new PrismaClient();
 
-// Populates db with products
+// Populates db with products and a user
 const main = async () => {
+  await prisma.rating.deleteMany();
   await prisma.product.deleteMany();
+  await prisma.user.deleteMany();
 
-  return Promise.all(
-    products.map(({ rating, ...product }) =>
-      prisma.product.create({
-        data: { ...product, rating: { create: rating } },
-      })
-    )
+  const createProducts = productsSeed.map((product) =>
+    prisma.product.create({
+      data: product,
+    })
   );
+  const createUsers = usersSeed.map((user) =>
+    prisma.user.create({
+      data: user,
+    })
+  );
+
+  return Promise.all([...createProducts, ...createUsers]);
 };
 
 main()
