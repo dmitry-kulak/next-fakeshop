@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <p>SEGS</p>
+      <p className='bg-accent-notification'>SEGS</p>
     </>
   );
 };
