@@ -13,5 +13,8 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: { 
+    domains: ['fakestoreapi.com'], 
+  }, 
 };
 export default config;

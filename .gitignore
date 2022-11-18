@@ -16,6 +16,9 @@
 /.next/
 /out/
 
+# text files
+.txt
+
 # production
 /build
 
@@ -40,3 +43,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 .idea
+.vscode
