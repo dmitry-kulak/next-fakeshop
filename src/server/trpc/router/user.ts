@@ -2,14 +2,12 @@ import { publicProcedure, router } from "../trpc";
 import { getUserSchema } from "../../../schemas/userSchemas";
 
 export const user = router({
-  getById: publicProcedure
-    .input(getUserSchema)
-    .query(({ input: userId, ctx }) =>
-      ctx.prisma.user.findUnique({
-        where: { id: userId },
-        include: { orders: true },
-      })
-    ),
+  getById: publicProcedure.input(getUserSchema).query(({ input: userId, ctx }) =>
+    ctx.prisma.user.findUnique({
+      where: { id: userId },
+      include: { orders: true },
+    })
+  ),
 
   // TODO
   // register: publicProcedure.input(createUserSchema).mutation(({ ctx, input }) =>
