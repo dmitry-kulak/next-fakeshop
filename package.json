@@ -9,7 +9,7 @@
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
-    "helpers::generate-color-schema": "ts-node-esm \"./helpers/mockup-schema\""
+    "helpers::generate-color-schema": "ts-node-esm \"./packages/mockup-schema\""
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"

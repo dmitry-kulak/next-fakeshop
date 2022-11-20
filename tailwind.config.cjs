@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
     colors: {
 
-      ...require('./packages/mockup-schema/style-schema.json'),
+      ...require('./packages/mockup-schema/schema/color-schema.json'),
 
     },
     textColor: {
