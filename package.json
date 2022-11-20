@@ -9,10 +9,22 @@
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
-    "helpers::generate-color-schema": "ts-node-esm \"./packages/mockup-schema\""
+    "helpers::generate-color-schema": "ts-node-esm \"./packages/mockup-schema\"",
+    "prepare": "husky install"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@next/font": "^13.0.3",
@@ -37,6 +49,8 @@
     "autoprefixer": "^10.4.7",
     "eslint": "^8.26.0",
     "eslint-config-next": "13.0.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
