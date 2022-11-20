@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nico: ['var(--font-nico)']
+      }
+    },
     colors: {
       ...require('./packages/mockup-schema/schema/color-schema.json'),
     },
