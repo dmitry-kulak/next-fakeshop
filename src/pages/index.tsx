@@ -1,12 +1,6 @@
-import { type NextPage } from "next";
 import Head from "next/head";
 
-import { trpc } from "../utils/trpc";
-
-const Home: NextPage = () => {
-  const { data } = trpc.example.getAll.useQuery();
-  console.log(data);
-
+const Home = () => {
   return (
     <>
       <Head>
@@ -15,7 +9,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <p className='bg-accent-notification'>SEGS</p>
+      <p>SEGS</p>
     </>
   );
 };
