@@ -1,0 +1,6 @@
+/* Text-size styles */
+/* base size: text-bold--md (16px) */
+--text-semi--xs: 0.62rem;
+--text-bold--xs: 0.62rem;
+--text-bold--sm: 0.75rem;
+--text-bold--md: 1rem;
