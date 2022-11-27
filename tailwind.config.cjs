@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nico: ['var(--font-nico)']
+        caps: ['var(--font-caps)']
       }
     },
     colors: {

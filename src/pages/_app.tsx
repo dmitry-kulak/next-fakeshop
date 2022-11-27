@@ -7,7 +7,7 @@ import "../styles/globals.css";
 
 // doesn't work via @next/font/google import at the moment
 const montserrat = localFont({ src: "./Montserrat-VariableFont_wght.ttf" });
-const nicoMoji = localFont({ src: "./NicoMoji-Regular.ttf", variable: "--font-nico" });
+const sixcaps = localFont({ src: "./SixCaps-Regular.ttf" });
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -15,7 +15,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <style jsx global>{`
         html {
           font-family: ${montserrat.style.fontFamily};
-          --font-nico: ${nicoMoji.style.fontFamily};
+          --font-caps: ${sixcaps.style.fontFamily};
         }
       `}</style>
       <Component {...pageProps} />
