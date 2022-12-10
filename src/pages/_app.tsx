@@ -4,10 +4,11 @@ import localFont from "@next/font/local";
 import { trpc } from "../utils/trpc";
 
 import "../styles/globals.css";
+import { Layout } from "../components/Layout/Layout";
 
 // doesn't work via @next/font/google import at the moment
 const montserrat = localFont({ src: "./Montserrat-VariableFont_wght.ttf" });
-const sixcaps = localFont({ src: "./SixCaps-Regular.ttf" });
+const cormorant = localFont({ src: "./Cormorant-VariableFont_wght.ttf" });
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -15,10 +16,12 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <style jsx global>{`
         html {
           font-family: ${montserrat.style.fontFamily};
-          --font-caps: ${sixcaps.style.fontFamily};
+          --font-logo: ${cormorant.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 };
