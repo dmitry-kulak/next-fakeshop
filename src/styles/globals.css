@@ -3,15 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply text-base-800;
-    @apply bg-main-fill-with-pattern;
-    @apply bg-background-pattern;
-  }
-
   #__next {
+    @apply bg-fill-with-pattern-main;
     @apply min-h-screen;
     @apply flex;
-    @apply flex-col
+    @apply flex-col;
+    @apply z-10;
+    @apply relative;
   }
+}
+
+#__next:after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/Intersect.svg");
+  opacity: 5%;
+  background-size: 50px;
+  z-index: -1;
 }

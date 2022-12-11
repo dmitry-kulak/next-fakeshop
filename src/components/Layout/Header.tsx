@@ -7,7 +7,7 @@ import Searchbar from "../Searchbar/Searchbar";
 const Header = () => {
   return (
     <Container as="header" className="flex justify-between p-5">
-      <Link href="/" className="font-logo text-3xl leading-6">
+      <Link href="/" className="font-logo text-xl leading-6">
         Next{<br />}Fakeshop
       </Link>
 
