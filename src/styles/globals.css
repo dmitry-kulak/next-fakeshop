@@ -5,5 +5,13 @@
 @layer base {
   html {
     @apply text-base-800;
+    @apply bg-main-fill-with-pattern;
+    @apply bg-background-pattern;
+  }
+
+  #__next {
+    @apply min-h-screen;
+    @apply flex;
+    @apply flex-col
   }
 }

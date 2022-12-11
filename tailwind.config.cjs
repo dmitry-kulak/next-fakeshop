@@ -4,12 +4,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nico: ['var(--font-nico)']
+        logo: ['var(--font-logo)']
+      },
+      fontSize: {
+        xs: '10px'
       }
     },
     colors: {
       ...require('./packages/mockup-schema/schema/color-schema.json'),
     },
+    backgroundImage: {
+      'background-pattern': "url('/Pattern.png')"
+    }
   },
   plugins: [],
 };
