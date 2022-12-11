@@ -1,12 +1,11 @@
-/* Color styles */
 --white: #FFFFFF;
 --text-color: #323232;
 --component--base--outline: #000000;
 --main--fill--with--gradient: #606F7C;
---main--fill-with--pattern: #606F7C;
+--dark---main--fill-with--pattern: #12171F;
+--main--fill-with--pattern: #1A2029;
 --black--alpha--10: #000000;
---accent--main: #93D1FF;
---accent--notification: #B52A2A;
+--accent--main: #F26C0D;
 --gray--900: #EDEDED;
 --gray--800: #DDDDDD;
 --gray--700: #CCCCCC;
