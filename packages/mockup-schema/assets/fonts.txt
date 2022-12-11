@@ -1,6 +1,10 @@
 /* Text-size styles */
-/* base size: text-bold--md (16px) */
---text-semi--xs: 0.62rem;
---text-bold--xs: 0.62rem;
---text-bold--sm: 0.75rem;
---text-bold--md: 1rem;
+--serif--xs--semibold: 10px;
+--serif--xs--bold: 10px;
+--serif--lg--bold: 18px;
+--serif--md--bold: 16px;
+--serif--sm--sm: 12px;
+--serif--sm--regular: 12px;
+--mono--sm--bold: 12px;
+--decor--xl--bold: 28px;
+--decor--lg--bold: 18px;
