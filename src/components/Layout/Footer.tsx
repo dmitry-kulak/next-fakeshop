@@ -1,6 +1,6 @@
-import Container from "../Container/Container";
-import LinksGroup from "../LinksGroup/LinksGroup";
-import QR from "../../icons/QR";
+import Container from "@components/Container/Container";
+import LinksGroup from "@components/LinksGroup/LinksGroup";
+import QR from "@icons/QR";
 
 // TODO think of something more clever
 const Footer = () => {

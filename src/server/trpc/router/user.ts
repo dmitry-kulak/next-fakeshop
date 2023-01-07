@@ -1,5 +1,5 @@
-import { publicProcedure, router } from "../trpc";
-import { getUserSchema } from "../../../schemas/userSchemas";
+import { publicProcedure, router } from "@server/trpc/trpc";
+import { getUserSchema } from "@schemas/userSchemas";
 
 export const user = router({
   getById: publicProcedure.input(getUserSchema).query(({ input: userId, ctx }) =>

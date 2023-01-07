@@ -1,6 +1,6 @@
-import CartIcon from "../../icons/CartIcon";
-import BellIcon from "../../icons/BellIcon";
-import ExitIcon from "../../icons/ExitIcon";
+import CartIcon from "@icons/CartIcon";
+import BellIcon from "@icons/BellIcon";
+import ExitIcon from "@icons/ExitIcon";
 
 const UserSettings = () => {
   return (

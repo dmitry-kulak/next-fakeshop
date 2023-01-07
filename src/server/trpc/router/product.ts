@@ -1,5 +1,5 @@
 import { publicProcedure, router } from "../trpc";
-import { getProductSchema } from "../../../schemas/productSchemas";
+import { getProductSchema } from "@schemas/productSchemas";
 
 export const product = router({
   getById: publicProcedure

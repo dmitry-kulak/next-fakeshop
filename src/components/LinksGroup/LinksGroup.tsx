@@ -1,7 +1,6 @@
-import type { ReactNode } from "react";
-import React from "react";
 import type { LinkProps } from "next/link";
 import Link from "next/link";
+import type { AnchorHTMLAttributes, ReactNode, RefAttributes } from "react";
 
 type LinksGroupProps = {
   label: string;
@@ -15,10 +14,10 @@ const LinksGroup = ({ label, children }: LinksGroupProps) => (
   </nav>
 );
 
-type Link_Props = Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof LinkProps> &
+type Link_Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, keyof LinkProps> &
   LinkProps &
-  React.RefAttributes<HTMLAnchorElement> & {
-    children?: React.ReactNode;
+  RefAttributes<HTMLAnchorElement> & {
+    children?: ReactNode;
     centered?: boolean;
   };
 

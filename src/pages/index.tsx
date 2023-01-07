@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Container from "../components/Container/Container";
+import Container from "@components/Container/Container";
 
 const Home = () => {
   return (

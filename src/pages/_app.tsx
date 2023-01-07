@@ -1,10 +1,10 @@
-import { type AppType } from "next/app";
+import type { AppType } from "next/app";
 import localFont from "@next/font/local";
 
-import { trpc } from "../utils/trpc";
+import { trpc } from "@utils/trpc";
 
 import "../styles/globals.css";
-import { Layout } from "../components/Layout/Layout";
+import { Layout } from "@components/Layout/Layout";
 
 // doesn't work via @next/font/google import at the moment
 const montserrat = localFont({ src: "./Montserrat-VariableFont_wght.ttf" });
