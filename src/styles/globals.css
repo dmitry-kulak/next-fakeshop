@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  #__next {
+  html {
     @apply bg-fill-with-pattern-main;
+  }
+
+  #__next {
     @apply min-h-screen;
     @apply flex;
     @apply flex-col;
@@ -13,7 +16,7 @@
   }
 }
 
-#__next:after {
+html:before {
   content: "";
   position: absolute;
   width: 100vw;
